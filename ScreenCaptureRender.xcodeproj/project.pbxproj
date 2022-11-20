@@ -11,6 +11,11 @@
 		DDED6D8F2928D0B3009D95C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDED6D8E2928D0B3009D95C7 /* Assets.xcassets */; };
 		DDED6D922928D0B3009D95C7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDED6D902928D0B3009D95C7 /* MainMenu.xib */; };
 		DDED6D942928D0B3009D95C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED6D932928D0B3009D95C7 /* main.m */; };
+		DDED6D9C2928D155009D95C7 /* ScreenCaptureWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED6D9B2928D155009D95C7 /* ScreenCaptureWindowController.m */; };
+		DDED6D9E2928D16D009D95C7 /* ScreenCaptureWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDED6D9D2928D16D009D95C7 /* ScreenCaptureWindowController.xib */; };
+		DDED6DA22928D678009D95C7 /* ScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED6DA12928D678009D95C7 /* ScreenRecorder.m */; };
+		DDED6DBE2929F230009D95C7 /* MetalViewRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED6DBD2929F230009D95C7 /* MetalViewRenderer.m */; };
+		DDED6DC12929F27B009D95C7 /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = DDED6DC02929F27B009D95C7 /* AAPLShaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,15 @@
 		DDED6D912928D0B3009D95C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DDED6D932928D0B3009D95C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DDED6D952928D0B3009D95C7 /* ScreenCaptureRender.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenCaptureRender.entitlements; sourceTree = "<group>"; };
+		DDED6D9B2928D155009D95C7 /* ScreenCaptureWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenCaptureWindowController.m; sourceTree = "<group>"; };
+		DDED6D9D2928D16D009D95C7 /* ScreenCaptureWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenCaptureWindowController.xib; sourceTree = "<group>"; };
+		DDED6D9F2928D1A5009D95C7 /* ScreenCaptureWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenCaptureWindowController.h; sourceTree = "<group>"; };
+		DDED6DA02928D66B009D95C7 /* ScreenRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenRecorder.h; sourceTree = "<group>"; };
+		DDED6DA12928D678009D95C7 /* ScreenRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenRecorder.m; sourceTree = "<group>"; };
+		DDED6DBC2929F21F009D95C7 /* MetalViewRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalViewRenderer.h; sourceTree = "<group>"; };
+		DDED6DBD2929F230009D95C7 /* MetalViewRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalViewRenderer.m; sourceTree = "<group>"; };
+		DDED6DBF2929F26A009D95C7 /* AAPLShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLShaderTypes.h; sourceTree = "<group>"; };
+		DDED6DC02929F27B009D95C7 /* AAPLShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,15 @@
 				DDED6D902928D0B3009D95C7 /* MainMenu.xib */,
 				DDED6D932928D0B3009D95C7 /* main.m */,
 				DDED6D952928D0B3009D95C7 /* ScreenCaptureRender.entitlements */,
+				DDED6D9B2928D155009D95C7 /* ScreenCaptureWindowController.m */,
+				DDED6D9F2928D1A5009D95C7 /* ScreenCaptureWindowController.h */,
+				DDED6D9D2928D16D009D95C7 /* ScreenCaptureWindowController.xib */,
+				DDED6DA02928D66B009D95C7 /* ScreenRecorder.h */,
+				DDED6DA12928D678009D95C7 /* ScreenRecorder.m */,
+				DDED6DBC2929F21F009D95C7 /* MetalViewRenderer.h */,
+				DDED6DBD2929F230009D95C7 /* MetalViewRenderer.m */,
+				DDED6DBF2929F26A009D95C7 /* AAPLShaderTypes.h */,
+				DDED6DC02929F27B009D95C7 /* AAPLShaders.metal */,
 			);
 			path = ScreenCaptureRender;
 			sourceTree = "<group>";
@@ -122,6 +145,7 @@
 			files = (
 				DDED6D8F2928D0B3009D95C7 /* Assets.xcassets in Resources */,
 				DDED6D922928D0B3009D95C7 /* MainMenu.xib in Resources */,
+				DDED6D9E2928D16D009D95C7 /* ScreenCaptureWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDED6DC12929F27B009D95C7 /* AAPLShaders.metal in Sources */,
+				DDED6D9C2928D155009D95C7 /* ScreenCaptureWindowController.m in Sources */,
 				DDED6D942928D0B3009D95C7 /* main.m in Sources */,
+				DDED6DBE2929F230009D95C7 /* MetalViewRenderer.m in Sources */,
+				DDED6DA22928D678009D95C7 /* ScreenRecorder.m in Sources */,
 				DDED6D8D2928D0B2009D95C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
